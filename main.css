@@ -9,6 +9,22 @@ body {
   hyphens: auto;
 }
 
+@media (max-width: 1024px) 
+{
+	body
+	{
+		font-size: 80%; 
+	}
+}
+
+@media (max-width: 1500px) 
+{
+	body
+	{
+		font-size: 90%; 
+	}
+}
+
 html {
   /* scroll-snap-type: y proximity; */
   scroll-snap-type: y mandatory;
@@ -20,8 +36,10 @@ html {
 aside {
   float: right;
   width: 38%;
+}
+figure {
   background: #eee;
-  padding: 5px;
+  padding: 5px;	
 }
 
 article {
@@ -55,7 +73,7 @@ font-weight: bold;
 font-weight: bold;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-norms {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-norms, .bgimg-violence, .bgimg-hate, .bgimg-flag, .bgimg-holocaust, .bgimg-hope {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -66,9 +84,23 @@ font-weight: bold;
 }
 .bgimg-1 {
   background-image: url("real_identity.jpg");
-  min-height: 100%;
+  /* min-height: 100vh; */
+  min-height: 100vh;
 }
-
+blockquote {
+	font-size: 90%;
+	
+}
+.bgimg-1_eyes {
+  background: url(eyes.gif), url(real_identity.jpg);
+  min-height: 100vh;
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bgimg-2 {
   background-image: url("bg_1.jpg");
   min-height: 800px;
@@ -112,6 +144,34 @@ font-weight: bold;
 .bgimg-norms {
   background-image: url("norms_society.jpg");
   min-height: 100vh;
+}
+
+.bgimg-violence {
+  background-image: url("violence.jpg");
+  /* min-height: 100vh; */
+  height: 100vh;
+  opacity: 0.75;
+}
+
+.bgimg-hate {
+  background-image: url("kkk.jpg");
+  height: 100vh;
+}
+
+.bgimg-flag {
+  background-image: url("german_flag.jpg");
+  height: 100vh;
+}
+
+.bgimg-holocaust {
+  background-image: url("holocaust_memorial.jpg");
+  height: 100vh;
+}
+
+.bgimg-hope {
+  background-image: url("hope.jpg");
+  height: 100vh;
+  opacity: 0.8;
 }
 
 .caption-1 {
@@ -178,6 +238,19 @@ font-weight: bold;
   font-size: 30px;
   letter-spacing: 5px;
 }
+.border3 {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  font-size: 11px;
+}
+.border4 {
+  background-color: #ddd;
+  font-weight:bold;
+  color: #000;
+  padding: 5px;
+  font-size: 13px;
+}
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -234,16 +307,26 @@ div.container {
   text-align:justify;
 }
 
+@media (max-height: 800px) {
+	.white {
+	  color: #777;
+	  background-color:white;
+	  text-align:center;
+	  padding:5px 10px;
+	  text-align:justify;
+	}
+}
+
 .text-block {
   position: absolute;
-  top: 18%;
+  top: 2%;
   right: 1%;
   background-color: black;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  width:28%;
-  height:71%;
+  width:28vw;
+  height:95vh;
 }
 
 a {
